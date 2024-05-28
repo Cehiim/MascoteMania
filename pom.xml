@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.MascoteMania</groupId>
-  <artifactId>projeto</artifactId>
+  <artifactId>MascoteMania</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>MascoteMania</name>
