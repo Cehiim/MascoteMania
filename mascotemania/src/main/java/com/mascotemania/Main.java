@@ -3,9 +3,11 @@ package com.mascotemania;
 import com.mascotemania.entity.Pedido;
 import com.mascotemania.entity.Cliente;
 import com.mascotemania.entity.Estoque;
-// import com.mascotemania.entity.Gerente;
+import com.mascotemania.entity.Gerente;
+import com.mascotemania.entity.Tosador;
 import com.mascotemania.control.CancelarPedidoControl;
 import com.mascotemania.control.RealizaCompraControl;
+import com.mascotemania.control.GeraRelatorioControl;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -14,10 +16,13 @@ public class Main {
 
     public static final Scanner scanner = new Scanner(System.in);
     public static final Estoque estoque = new Estoque();
+    public static final ArrayList<Tosador> tosadores = new ArrayList<>();
     private static Cliente cliente1;
     private static Cliente cliente2;
     private static Cliente cliente3;
-    // private static Gerente gerente1;
+    private static Gerente gerente1;
+    private static Tosador tosador1;
+    private static Tosador tosador2;
 
     public static void main(String[] args) {
         System.out.println("Mascote Mania.");
@@ -35,8 +40,8 @@ public class Main {
                 case 1:
                     int opcao_gerente = opcoesGerente();
                     if (opcao_gerente == 1) {
-                       // GeraRelatorioControl geraRelatorioControl = new GeraRelatorioControl();
-                       // geraRelatorioControl.gerarRelatorio(gerente1);
+                       GeraRelatorioControl geraRelatorioControl = new GeraRelatorioControl();
+                       geraRelatorioControl.gerarRelatorio(gerente1);
                     } else if (opcao_gerente == 2) {
                         exec = false;
                     } else {
@@ -112,5 +117,18 @@ public class Main {
         clientes.add(cliente1);
         clientes.add(cliente2);
         clientes.add(cliente3);
+
+        gerente1 = new Gerente("1", "senhagerente", "Paulo", "Cesar");
+
+        tosador1 = new Tosador("1", "senha4", "Tânia", "Silva");
+        tosador2 = new Tosador("2", "senha5", "Cleusa", "Santos");
+        tosador1.adicionaComentario("Bom");
+        tosador1.adicionaComentario("Excelente"); 
+        tosador1.setNotaMedia(10);
+        tosador2.adicionaComentario("Mediano");
+        tosador2.adicionaComentario("Não gostei");
+        tosador2.setNotaMedia(5);
+        tosadores.add(tosador1);
+        tosadores.add(tosador2);
     }
 }
