@@ -1,4 +1,9 @@
 package com.mascotemania.boundary;
+import com.mascotemania.entity.Cliente;
+import com.mascotemania.entity.Agendamento;
+import com.mascotemania.entity.Pet;
+import com.mascotemania.entity.Servicos;
+import com.mascotemania.entity.Unidades;
 
 import java.util.Scanner;
 
