@@ -8,11 +8,11 @@ public class Pet {
     private String tipo;
     private ArrayList<String> info_adicionais;
 
-    public Pet(String id, String nome, String tipo, ArrayList<String> info_adicionais) {
+    public Pet(String id, String nome, String tipo) {
         this.id = id;
         this.nome = nome;
         this.tipo = tipo;
-        this.info_adicionais = info_adicionais;
+        this.info_adicionais = new ArrayList<String>();
     }
 
    public String getId() {
