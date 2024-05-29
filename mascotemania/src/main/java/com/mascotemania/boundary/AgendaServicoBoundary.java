@@ -50,8 +50,7 @@ public class AgendaServicoBoundary {
         System.out.println();
         } else {
             System.out.println("Não foi possível realizar o agendamento");
-        }
-        }
+        }*/
     }
 }
-*/
+
