@@ -12,7 +12,7 @@ public class Agendamento {
     private float preco;
   
 
-    public Agendamento(String id, String pet, String local, ArrayList<String> servicos, String data, String horario, float preco) {
+    public Agendamento(String id, String pet, String local, String data, String horario, float preco) {
         this.id = id;
         this.pet = pet;
         this.local = local;
