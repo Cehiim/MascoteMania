@@ -1,3 +1,5 @@
+package com.mascotemania.boundary;
+
 import java.util.Scanner;
 
 public class AgendaServicoBoundary {
