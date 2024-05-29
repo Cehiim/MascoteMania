@@ -21,6 +21,7 @@ public class Agendamento {
         this.horario = horario;
         this.preco = preco;
     }
+    
     public String getId() {
         return id;
     }
