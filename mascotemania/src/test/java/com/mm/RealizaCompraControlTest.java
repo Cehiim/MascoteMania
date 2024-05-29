@@ -28,15 +28,17 @@ public class RealizaCompraControlTest {
         pedidos = new ArrayList<>();
         Pedido pedido1 = new Pedido(1, "Ração", 2, 50.0, "Pendente");
         Pedido pedido2 = new Pedido(2, "Brinquedo", 1, 30.0, "Entregue");
+        Pedido pedido3 = new Pedido(3, "Cama", 1, 100.0, "Em transporte");
         pedidos.add(pedido1);
         pedidos.add(pedido2);
+        pedidos.add(pedido3);
 
         cliente = new Cliente("1", "senha1", "João", "Silva", pedidos);
     }
 
     @Test
     public void testCompraRealizada() {
-        int resultado = control.realizaCompra(cliente, 2, 4, estoque);
+        int resultado = control.realizaCompra(cliente, 1, 4, estoque);
         assertEquals(200, resultado);
     }
 
@@ -48,7 +50,7 @@ public class RealizaCompraControlTest {
 
     @Test
     public void testQuantidadeExcedida() {
-        int resultado = control.realizaCompra(cliente, 2, 20, estoque);
+        int resultado = control.realizaCompra(cliente, 1, 20, estoque);
         assertEquals(409, resultado);
     }
 }

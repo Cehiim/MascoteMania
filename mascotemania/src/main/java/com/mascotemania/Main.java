@@ -5,6 +5,7 @@ import com.mascotemania.entity.Cliente;
 import com.mascotemania.entity.Estoque;
 // import com.mascotemania.entity.Gerente;
 import com.mascotemania.control.CancelarPedidoControl;
+import com.mascotemania.control.RealizaCompraControl;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -46,8 +47,8 @@ public class Main {
                     int opcao_cliente = opcoesCliente();
                     
                     if (opcao_cliente == 1) {
-                        // RealizaCompraControl realizaControl = new RealizaCompraControl(); 
-                        // realizaControl.realizaCompra(cliente1);
+                        RealizaCompraControl realizaControl = new RealizaCompraControl(); 
+                        realizaControl.realizaCompra(cliente1);
                     } else if (opcao_cliente == 2) {
                         // AgendarServicoControl agendarServicoControl = new AgendarServicoControl();
                     } else if (opcao_cliente == 3) {
