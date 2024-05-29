@@ -19,10 +19,6 @@ public class Pet {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -45,5 +41,10 @@ public class Pet {
 
     public void addInfo(String info) {
       info_adicionais.add(info);
+    }
+
+    @Override
+    public String toString() {
+        return this.getId() + " " + this.getNome() + " " + this.getTipo() + "\n" + "Informações adicionais: \n" + this.getInfo();
     }
 }
