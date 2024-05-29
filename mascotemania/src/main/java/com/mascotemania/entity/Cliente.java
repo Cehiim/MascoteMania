@@ -11,7 +11,7 @@ public class Cliente {
     private ArrayList<Pet> pets;
     private ArrayList<Agendamento> agendamentos;
 
-    public Cliente(String id, String senha, String primeiroNome, String ultimoNome, private ArrayList<Pedido> pedidos) {
+    public Cliente(String id, String senha, String primeiroNome, String ultimoNome, ArrayList<Pedido> pedidos) {
         this.id = id;
         this.senha = senha;
         this.primeiroNome = primeiroNome;
