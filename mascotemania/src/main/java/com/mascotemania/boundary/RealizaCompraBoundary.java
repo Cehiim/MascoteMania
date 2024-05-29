@@ -1,9 +1,9 @@
-package Boundary;
+package com.mascotemania.boundary;
 
 import java.util.Scanner;
-import Entities.Cliente;
-import Control.RealizaCompraControl;
-import Entities.Estoque;
+import com.mascotemania.entity.Cliente;
+import com.mascotemania.control.RealizaCompraControl;
+import com.mascotemania.entity..Estoque;
 
 public class RealizaCompraBoundary {
     public RealizaCompraBoundary() {}
