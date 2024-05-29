@@ -1,9 +1,9 @@
-package Control;
+package com.mascotemania.control;
 
-import Entities.Cliente;
-import Boundary.RealizaCompraBoundary;
-import Entities.Estoque;
-import Entities.Pedido;
+import com.mascotemania.entity.Cliente;
+import com.mascotemania.boundary.RealizaCompraBoundary;
+import com.mascotemania.entity.Estoque;
+import com.mascotemania.entity.Pedido;
 
 public class RealizaCompraControl {
     public RealizaCompraControl() {}
