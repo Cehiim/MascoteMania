@@ -1,3 +1,5 @@
+package com.mascotemania.entity;
+
 import java.util.HashMap;
 
 public class Unidades {
