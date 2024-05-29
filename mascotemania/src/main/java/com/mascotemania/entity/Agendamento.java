@@ -1,4 +1,4 @@
-package entity;
+package com.mascotemania.entity;
 
 import java.util.ArrayList;
 
