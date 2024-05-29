@@ -3,7 +3,7 @@ package com.mascotemania.boundary;
 import java.util.Scanner;
 import com.mascotemania.entity.Cliente;
 import com.mascotemania.control.RealizaCompraControl;
-import com.mascotemania.entity..Estoque;
+import com.mascotemania.entity.Estoque;
 
 public class RealizaCompraBoundary {
     public RealizaCompraBoundary() {}
