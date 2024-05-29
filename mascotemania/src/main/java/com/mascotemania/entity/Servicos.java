@@ -1,4 +1,4 @@
-package Entities;
+package com.mascotemania.entity;
 
 import java.util.HashMap;
 
