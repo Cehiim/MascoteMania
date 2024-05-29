@@ -31,7 +31,7 @@ public class AgendaServicoBoundary {
 
     System.out.println("Insira o horário do agendamento");
     String horario = scanner.next();
-
+/*
     AgendaServicoControl agendaServicoControl = new AgendaServicoControl();
     int retorno = agendaServicoControl.agendaServico(cliente, id_pet, id_unidade, id_servico, data, horario);
 
@@ -54,3 +54,4 @@ public class AgendaServicoBoundary {
         }
     }
 }
+*/
