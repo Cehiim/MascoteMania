@@ -34,8 +34,8 @@ public class CancelarPedidoControl {
                 estoque.adicionarProduto(cliente.getPedidos().get(i).getProduto(), cliente.getPedidos().get(i).getQuantidade());
 
                 System.out.println("Produto retornado ao estoque.");
-                System.out.println("Veja o estoque:\n");
-                estoque.listarEstoque();
+                // System.out.println("Veja o estoque:\n");
+                // estoque.listarEstoque();
 
                 return 200; // Pedido deletado
             }
