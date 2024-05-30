@@ -4,6 +4,7 @@ import com.mascotemania.control.AgendaServicoControl;
 import com.mascotemania.entity.Agendamento;
 import com.mascotemania.entity.Cliente;
 import com.mascotemania.entity.Pet;
+import com.mascotemania.entity.Pedido;
 import com.mascotemania.Main;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -22,7 +23,7 @@ public class AgendaServicoControlTest {
 
     @BeforeEach 
     public void setUp() {
-        control = new RealizaCompraControl(); 
+        control = new AgendaServicoControl(); 
         pedidos = new ArrayList();
         Pedido pedido1 = new Pedido(1, "Ração", 2, 50.0, "Pendente");
         Pedido pedido2 = new Pedido(2, "Brinquedo", 1, 30.0, "Entregue");
