@@ -5,6 +5,7 @@ import com.mascotemania.entity.Cliente;
 import com.mascotemania.entity.Estoque;
 import com.mascotemania.entity.Gerente;
 import com.mascotemania.entity.Tosador;
+import com.mascotemania.entity.Pet;
 import com.mascotemania.control.CancelarPedidoControl;
 import com.mascotemania.control.RealizaCompraControl;
 import com.mascotemania.control.GeraRelatorioControl;
@@ -23,6 +24,8 @@ public class Main {
     private static Gerente gerente1;
     private static Tosador tosador1;
     private static Tosador tosador2;
+    private static Pet pet1;
+    private static Pet pet2;
 
     public static void main(String[] args) {
         System.out.println("Mascote Mania.");
@@ -55,7 +58,7 @@ public class Main {
                         RealizaCompraControl realizaControl = new RealizaCompraControl(); 
                         realizaControl.realizaCompra(cliente1);
                     } else if (opcao_cliente == 2) {
-                        // AgendarServicoControl agendarServicoControl = new AgendarServicoControl();
+                        AgendarServicoControl agendarServicoControl = new AgendarServicoControl();
                     } else if (opcao_cliente == 3) {
                         CancelarPedidoControl cancelaControl = new CancelarPedidoControl();
                         cancelaControl.cancelarPedido(cliente1);
@@ -112,6 +115,11 @@ public class Main {
         cliente1 = new Cliente("1", "senha1", "João", "Silva", pedidos);
         cliente2 = new Cliente("2", "senha2", "Maria", "Santos", pedidos);
         cliente3 = new Cliente("3", "senha3", "José", "Oliveira", pedidos);
+
+        pet1 = new Pet("1", "Diana", "Gato");
+        pet2 = new Pet("2", "Luna", "Cachorro");
+        cliente1.adicionarPet(pet1);
+        cliente1.adicionarPet(pet2);
 
         ArrayList<Cliente> clientes = new ArrayList<>();
         clientes.add(cliente1);
