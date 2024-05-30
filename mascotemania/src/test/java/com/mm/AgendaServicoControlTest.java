@@ -37,7 +37,7 @@ public class AgendaServicoControlTest {
 
     @Test 
     public void testAgendamentoRealizado() {
-        int  resultado = control.agendaServico(cliente, 1, 1, "12/10 - 12:00")
+        int  resultado = control.agendaServico(cliente, 1, 1, "12/10 - 12:00");
         assertEquals(200, resultado);
     }
 
