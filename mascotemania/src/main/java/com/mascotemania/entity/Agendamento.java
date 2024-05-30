@@ -1,24 +1,18 @@
 package com.mascotemania.entity;
 
-import java.util.ArrayList;
-
 public class Agendamento {
     private String id;
     private Pet pet;
-    private String unidade;
-    private ArrayList<String> servicos;
+    private String servico;
     private String data;
-    private String horario;
     private float preco;
 
 
-    public Agendamento(String id, Pet pet, String unidade, String data, String horario, float preco) {
+    public Agendamento(String id, Pet pet, String servico, String data, float preco) {
         this.id = id;
         this.pet = pet;
-        this.unidade = unidade;
-        this.servicos = new ArrayList<String>();
+        this.servico = servico;
         this.data = data;
-        this.horario = horario;
         this.preco = preco;
     }
 
@@ -33,21 +27,9 @@ public class Agendamento {
     public void setPet(Pet pet) {
         this.pet = pet;
     }
-
-    public String getUnidade() {
-        return unidade;
-    }
     
-    public void setUnidade(String unidade) {
-        this.unidade = unidade;
-    }
-
-    public ArrayList<String> getServicos() {
-        return servicos;
-    }
-    
-    public void addServicos(String servico) {
-        servicos.add(servico);
+    public String getServicos() {
+        return servico;
     }
 
     public String getData() {
@@ -56,14 +38,6 @@ public class Agendamento {
     
     public void setData(String data) {
         this.data = data;
-    }
-
-   public String getHorario() {
-        return horario;
-    }
-    
-    public void setHorario(String horario) {
-        this.horario = horario;
     }
 
     public float getPreco() {
