@@ -9,6 +9,7 @@ import com.mascotemania.entity.Pet;
 import com.mascotemania.control.CancelarPedidoControl;
 import com.mascotemania.control.RealizaCompraControl;
 import com.mascotemania.control.GeraRelatorioControl;
+import com.mascotemania.control.AgendaServicoControl;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -59,6 +60,7 @@ public class Main {
                         realizaControl.realizaCompra(cliente1);
                     } else if (opcao_cliente == 2) {
                         AgendarServicoControl agendarServicoControl = new AgendarServicoControl();
+                        agendarServicoControl.agendaServico(cliente1);
                     } else if (opcao_cliente == 3) {
                         CancelarPedidoControl cancelaControl = new CancelarPedidoControl();
                         cancelaControl.cancelarPedido(cliente1);
