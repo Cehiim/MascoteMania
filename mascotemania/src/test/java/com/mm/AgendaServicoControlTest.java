@@ -16,10 +16,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class AgendaServicoControlTest {
-    private Control.AgendaServicoControl control; 
+    private AgendaServicoControl control; 
     private Cliente cliente;
     private Pet pet1;
-    private Pet pet2; 
+    private Pet pet2;
+    private ArrayList<Pedido> pedidos;
 
     @BeforeEach 
     public void setUp() {
